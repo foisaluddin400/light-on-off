@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #off{
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 25px;
+            margin-left: 10px;
+            transition: 0.4s;
+        }
+        #off:hover{
+            background-color: rgb(255, 0, 0);
+            transform: scale(1.1);
+        }
+        #on{
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 25px;
+            transition: 0.4s;
+        }
+        #on:hover{
+            background-color: rgb(233, 236, 4);
+            transform: scale(1.1);
+        }
+        .btn{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+ <div class="title">
+    <h1 id="change">Light off</h1>
+ </div>
+ 
+    <img id="light1" src="img/lightoff.jpg" alt="">
+    <img id="light2" src="img/lightoff.jpg" alt="">
+    <img id="light3" src="img/lightoff.jpg" alt="">
+    <img id="light4" src="img/lightoff.jpg" alt="">
+    <img id="light5" src="img/lightoff.jpg" alt="">
+ 
+
+ <div class="btn">
+    <button id="on" onclick="lightBtn(1)">On</button>
+    <button id="off" onclick="lightBtn(0)">Off</button>
+ </div>
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
